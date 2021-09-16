@@ -1,0 +1,32 @@
+<!-- index.wxml -->
+<view class="container demo">
+  <view class="card">
+    <view class="header">
+      <view class="title">蓝牙设备：</view>
+      <a class="searchBtn" bindtap="reSearch">重新扫描</a>
+    </view>
+    <view wx:if='{{deviceList.length > 0}}' class="list">
+      <view class="item" wx:for="{{deviceList}}" wx:key="deviceId" data-device-id="{{item.deviceId}}" data-device-name="{{item.deviceName}}" data-status="{{item.status}}" bindtap="handleConnect">
+        <view class="name">{{item.deviceName}}</view>
+        <view class="status">
+          <text>{{item.status}}</text>
+          <view wx:if="{{item.status === '连接中'}}" class="weui-primary-loading weui-primary-loading_brand">
+            <view class="weui-primary-loading__dot"></view>
+          </view>
+          <i wx:if="{{item.status === '未连接'}}" class="weui-icon-unChecked"></i>
+          <i wx:if="{{item.status === '已连接'}}" class="weui-icon-checked"></i>
+        </view>
+      </view>
+    </view>
+    <view wx:if='{{deviceList.length === 0}}' class="tips">
+      <view class="msg">暂无可用设备</view>
+    </view>
+  </view>
+  <view class='btns'>
+    <button type="primary" disabled="{{status !== 'connected'}}" bindtap="onPrint">打印</button>
+    <button type="primary" disabled="{{status !== 'connected'}}" bindtap="onPrintBarCode">打印条形码</button>
+    <button type="primary" disabled="{{status !== 'connected'}}" bindtap="onPrintQrCode">打印二维码</button>
+    <button type="primary" disabled="{{status !== 'connected'}}" bindtap="onPrintRpeat">循环打印</button>
+    <button type="primary" disabled="{{status !== 'connected'}}" bindtap="onPrintPage">页模式打印</button>
+  </view>
+</view>

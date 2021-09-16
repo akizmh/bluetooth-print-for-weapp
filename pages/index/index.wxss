@@ -1,0 +1,91 @@
+.demo {
+  padding: 20rpx 0;
+}
+.card {
+  width: 694rpx;
+  margin: 16rpx auto;
+  padding: 32rpx 28rpx;
+  background: #ffffff;
+  box-shadow: 0 10px 20px 0 rgba(30, 40, 60, 0.06);
+  border-radius: 16px;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+.header {
+  padding-bottom: 36rpx;
+  border-bottom: 1px dashed #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+}
+.header .title {
+  font-size: 32rpx;
+  color: #1e283c;
+}
+.header .searchBtn {
+  color: #207dfe;
+}
+.tips {
+  padding-top: 45rpx;
+  padding-bottom: 34rpx;
+  text-align: center;
+}
+.tips .msg {
+  display: block;
+  height: 30rpx;
+  line-height: 30rpx;
+  margin-top: 26rpx;
+  font-size: 28rpx;
+  color: #b9bec3;
+}
+.list {
+  padding-top: 35rpx;
+}
+.list .item {
+  display: flex;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-bottom: 37rpx;
+}
+.list .item:last-child {
+  margin-bottom: 0;
+}
+.list .item .name {
+  flex: 1;
+  margin-right: 16rpx;
+  font-size: 30rpx;
+  color: #6e7382;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list .item .status {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #b9bec3;
+}
+.list .item text {
+  margin-right: 18rpx;
+  position: relative;
+  bottom: 2rpx;
+}
+
+.list .weui-icon-unChecked,
+.list .weui-icon-checked {
+  width: 40rpx;
+  height: 40rpx;
+}
+.list .weui-icon-unChecked {
+  color: rgba(0, 0, 0, 0.3);
+  -webkit-mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%221000%22%20height%3D%221000%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M500%20916.667C269.881%20916.667%2083.333%20730.119%2083.333%20500%2083.333%20269.881%20269.881%2083.333%20500%2083.333c230.119%200%20416.667%20186.548%20416.667%20416.667%200%20230.119-186.548%20416.667-416.667%20416.667zm0-50c202.504%200%20366.667-164.163%20366.667-366.667%200-202.504-164.163-366.667-366.667-366.667-202.504%200-366.667%20164.163-366.667%20366.667%200%20202.504%20164.163%20366.667%20366.667%20366.667z%22%20fill-rule%3D%22evenodd%22%20fill-opacity%3D%22.9%22%2F%3E%3C%2Fsvg%3E);
+  mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%221000%22%20height%3D%221000%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M500%20916.667C269.881%20916.667%2083.333%20730.119%2083.333%20500%2083.333%20269.881%20269.881%2083.333%20500%2083.333c230.119%200%20416.667%20186.548%20416.667%20416.667%200%20230.119-186.548%20416.667-416.667%20416.667zm0-50c202.504%200%20366.667-164.163%20366.667-366.667%200-202.504-164.163-366.667-366.667-366.667-202.504%200-366.667%20164.163-366.667%20366.667%200%20202.504%20164.163%20366.667%20366.667%20366.667z%22%20fill-rule%3D%22evenodd%22%20fill-opacity%3D%22.9%22%2F%3E%3C%2Fsvg%3E);
+}
+.list .weui-icon-checked {
+  color: #07c160;
+  -webkit-mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M12%2022C6.477%2022%202%2017.523%202%2012S6.477%202%2012%202s10%204.477%2010%2010-4.477%2010-10%2010zm-1.177-7.86l-2.765-2.767L7%2012.431l3.119%203.121a1%201%200%20001.414%200l5.952-5.95-1.062-1.062-5.6%205.6z%22%2F%3E%3C%2Fsvg%3E);
+  mask-image: url(data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M12%2022C6.477%2022%202%2017.523%202%2012S6.477%202%2012%202s10%204.477%2010%2010-4.477%2010-10%2010zm-1.177-7.86l-2.765-2.767L7%2012.431l3.119%203.121a1%201%200%20001.414%200l5.952-5.95-1.062-1.062-5.6%205.6z%22%2F%3E%3C%2Fsvg%3E);
+}
+
+.btns button {
+  margin-bottom: 20rpx;
+}
